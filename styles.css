@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Hanken Grotesk", sans-serif;
   font-optical-sizing: auto;
@@ -5,15 +9,18 @@ body {
   margin: 10vh 20vw;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #333;
   position: fixed;
   left: 0;
-  width: 15vw;
-}
-
-a {
-  color: white;
-  text-decoration: none;
+  width: 12vw;
+  height: 20vh;
+  padding: 2vw;
 }
