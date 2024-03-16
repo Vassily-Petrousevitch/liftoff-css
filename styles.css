@@ -11,6 +11,10 @@ a {
   font-size: large;
 }
 
+a[href^="https"] {
+  text-decoration: underline;
+}
+
 @media only screen and (max-device-width: 768px) {
   .navbar {
     overflow: hidden;
