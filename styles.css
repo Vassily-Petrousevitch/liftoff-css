@@ -44,3 +44,7 @@ a[href^="https"] {
     padding: 2vw;
   }
 }
+
+li li {
+  font-weight: bold;
+}
