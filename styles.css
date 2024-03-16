@@ -1,0 +1,19 @@
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 10vh 20vw;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  left: 0;
+  width: 15vw;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
