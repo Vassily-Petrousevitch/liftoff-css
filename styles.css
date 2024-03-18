@@ -15,6 +15,15 @@ a {
   font-size: large;
 }
 
+a[href^="#"] {
+  color: hotpink
+}
+
+a[href^="https"] {
+  color: rgb(192, 192, 254);
+  text-decoration: underline;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -23,4 +32,47 @@ a {
   width: 12vw;
   height: 20vh;
   padding: 2vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Technically mobile first methadology suggests using min width for stuff */
+@media screen and (max-width: 768px) {
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+  }
+}
+
+li li { 
+  font-weight: bold;
+}
+
+.bouncy {
+  animation: bounce 1s linear 0s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
